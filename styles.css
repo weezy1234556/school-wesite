@@ -1,0 +1,116 @@
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f6f9;
+  color: #333;
+}
+
+header {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.motto {
+  font-style: italic;
+  margin: 5px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 15px 0 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.section {
+  padding: 30px;
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.hidden {
+  display: none;
+}
+
+form input, form button {
+  display: block;
+  width: 95%;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background: #003366;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #0055aa;
+}
+
+.admin-section {
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #003366;
+  color: white;
+  margin-top: 30px;
+}
+
+/* Hidden admin login link */
+.hidden-link {
+  font-size: 10px;
+  color: #bbb;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.hidden-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .section {
+    width: 90%;
+  }
+}
